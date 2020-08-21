@@ -2,7 +2,7 @@
 
 $(document).ready(function(){
 
-  console.log("okay")
+
   $('form').on('submit', function(){
     
 
