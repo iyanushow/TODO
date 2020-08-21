@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO APP</title>
+    <script src="/assets/jquery-3.5.1.min.js"></script>
+    <script src="/assets/todo-list.js"></script>
+    <link rel="stylesheet" href="/assets/styles.css">
+    
+</head>
+<body>
+    <div id="todo-table">
+        <form>
+            <input type="text" name="item" id="" placeholder="Add new item" required>
+            <button type="submit">submit</button>
+        </form>
+
+        <ul>
+
+            <% todos.forEach(function(todo){ %>
+                <li><%= todo.item %></li>
+
+            <% });%>
+        </ul>
+
+
+    </div>
+    
+</body>
+</html>
