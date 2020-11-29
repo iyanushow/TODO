@@ -1,7 +1,7 @@
+require('dotenv').config();
 //require express and body-parser
 var express = require('express');
 var todoController = require('./controllers/todoController')
-
 var app = express();
 
 
@@ -19,6 +19,6 @@ todoController(app);
 
 
 //listen to port
-app.listen(3000, function(){
+app.listen(process.env.PORT || 3000, function(){
     console.log("port active");
 })
