@@ -1,9 +1,9 @@
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
-const dbURL = process.env.DB_URL || 'mongodb://localhost:27017/todoDB'
+const dbURL = process.env.DB_URL;
 
-mongoose.connect(dbURL, { useNewUrlParser: true , useUnifiedTopology: true})
+mongoose.connect(dbURL, { useNewUrlParser: true, useUnifiedTopology: true });
 
 var todoSchema = new mongoose.Schema({
     item: String
