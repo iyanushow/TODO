@@ -7,6 +7,7 @@
     <script src="/assets/jquery-3.5.1.min.js"></script>
     <script src="/assets/todo-list.js"></script>
     <link rel="stylesheet" href="/assets/styles.css">
+    <link rel="stylesheet" href="/assets/libraries/css/all.min.css">
     
 </head>
 <body>
@@ -19,7 +20,7 @@
         <ul>
 
             <% todos.forEach(function(todo){ %>
-                <li><%= todo.item %></li>
+                <li><span><i class="fa fa-trash"></i></span><%= todo.item %></li>
 
             <% });%>
         </ul>
